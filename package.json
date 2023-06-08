@@ -1,0 +1,41 @@
+{
+  "name": "pptx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -L",
+    "build": "rm -rf ./dist/ && tsc",
+    "start": "node -r dotenv-flow/config -r module-alias/register dist/index.js",
+    "lint": "eslint src --ext js,ts,tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ghalex/pptxgenjs": "3.13.0-beta.2",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "underscore": "^1.13.6",
+    "zapnode": "^1.0.11",
+    "zapnode-plugins": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "@types/underscore": "^1.11.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "dotenv-flow": "^3.2.0",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "13.3.1",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "module-alias": "^2.2.2",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
